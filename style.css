@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "cards";
+  src: url(font.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 30px;
+}
+.container {
+  height: 300px;
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 20px;
+  position: relative;
+  background-color: rgb(5, 5, 5);
+  color: white;
+  border-color: orange;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(243, 235, 235),
+    rgb(240, 99, 99)
+  );
+  transition: all 1s;
+}
+.container:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 10px 10px rgb(143, 138, 138);
+}
+p {
+  font-size: x-large;
+}
+.top-left,
+.text-center,
+.bottom-right {
+  position: absolute;
+}
+.bottom-right {
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
+}
+.text-center {
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-family: cards;
+}
+.top-left {
+  top: 10px;
+  left: 10px;
+}
